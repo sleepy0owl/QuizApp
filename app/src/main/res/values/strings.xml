@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <!-- Question one -->
+
+    <string name="Q1">Who invented C programming language?</string>
+    <string name="hint1">Full Name</string>
+
+    <!-- Question two & options-->
+
+    <string name="Q2">In java objects are stored in stack.</string>
+    <string name="Q2_OP1">True</string>
+    <string name="Q2_OP2">False</string>
+
+    <!--Question three & options -->
+
+    <string name="Q3">What is address-of operator in C language?</string>
+    <string name="Q3_OP1">asterisk</string>
+    <string name="Q3_OP2">ampersand</string>
+
+    <!-- Question four & options -->
+
+    <string name="Q4">Is android os unix-like os?</string>
+    <string name="hint2">True OR False</string>
+
+    <!-- Question five & options -->
+
+    <string name="Q5">What is time complexity of quick sort in average case and worst case?</string>
+    <string name="Q5_OP1">O(n)</string>
+    <string name="Q5_OP2">O(nlogn)</string>
+    <string name="Q5_OP3">O(logn)</string>
+    <string name="Q5_OP4">O(n2)</string>
+
+    <!-- Question six & options -->
+
+    <string name="Q6">Time complexity of insertion sort in best case and worst case.</string>
+    <string name="Q6_OP1">O(n)</string>
+    <string name="Q6_OP2">O(nlong)</string>
+    <string name="Q6_OP3">O(logn)</string>
+    <string name="Q6_OP4">O(n2)</string>
+
+    <!-- Question seven & options -->
+
+    <string name="Q7">Founder of the boring company</string>
+    <string name="Q7_OP1">Elon Musk</string>
+    <string name="Q7_OP2">Jeff Bezos</string>
+
+    <!-- Question eight -->
+
+    <string name="Q8">Who invented java programming language?</string>
+
+    <string name="submit">submit</string>
+</resources>

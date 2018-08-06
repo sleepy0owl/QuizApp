@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="question_font_size">24sp</dimen>
+    <dimen name="option_font_size">20sp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="spacing">8dp</dimen>
+    <dimen name="button">24dp</dimen>
+    <dimen name="zero">0dp</dimen>
+</resources>
