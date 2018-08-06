@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private int totalScore = 0;
     private int correctAnswer = 0;
     private int wrongAnswer = 0;
+
     /**
      * function checking question 1
      */
@@ -31,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         if (value.equals("DENNIS RITCHIE") || value.equals("DENNIS M. RITCHIE")) {
             totalScore = totalScore + 1;
             correctAnswer = correctAnswer + 1;
-        }else if (value.equals("")){
+        } else if (value.equals("")) {
             wrongAnswer = wrongAnswer + 1;
-        }else
+        } else
             wrongAnswer++;
     }
 
@@ -42,29 +43,30 @@ public class MainActivity extends AppCompatActivity {
      * question two ---> radio button handler
      */
 
-    public void questionTwo(){
+    public void questionTwo() {
         RadioButton radioButtonOne = findViewById(R.id.rb_question_2_op1);
         RadioButton radioButtonTwo = findViewById(R.id.rb_question_2_op2);
         //option one is correct
-        if (radioButtonOne.isChecked()){
+        if (radioButtonOne.isChecked()) {
             totalScore++;
             correctAnswer++;
-        }else
+        } else
             wrongAnswer++;
     }
+
     /**
      * function checking question 3
      * question three ---> radio button handler
      */
 
-    public void questionThree(){
+    public void questionThree() {
         RadioButton radioButtonOne = findViewById(R.id.rb_question_3_op1);
         RadioButton radioButtonTwo = findViewById(R.id.rb_question_3_op2);
         //option two is correct
-        if (radioButtonTwo.isChecked()){
+        if (radioButtonTwo.isChecked()) {
             totalScore++;
             correctAnswer++;
-        }else
+        } else
             wrongAnswer++;
     }
 
@@ -77,9 +79,9 @@ public class MainActivity extends AppCompatActivity {
         if (value.equals("TRUE")) {
             totalScore++;
             correctAnswer++;
-        }else if (value.equals("")){
+        } else if (value.equals("")) {
             wrongAnswer++;
-        }else
+        } else
             wrongAnswer++;
     }
 
@@ -87,49 +89,51 @@ public class MainActivity extends AppCompatActivity {
      * function checking question 5
      * question 5 check box handler
      */
-    public void questionFive(){
+    public void questionFive() {
         CheckBox checkBoxTwo = findViewById(R.id.cb_question_5_op2);
         CheckBox checkBoxFour = findViewById(R.id.cb_question_5_op4);
         //option2 and option4 are correct
         CheckBox checkBoxOne = findViewById(R.id.cb_question_5_op1);
         CheckBox checkBoxThree = findViewById(R.id.cb_question_5_op3);
-        if (!checkBoxOne.isChecked() && checkBoxTwo.isChecked() && checkBoxFour.isChecked() && !checkBoxThree.isChecked()){
+        if (!checkBoxOne.isChecked() && checkBoxTwo.isChecked() && checkBoxFour.isChecked() && !checkBoxThree.isChecked()) {
             totalScore++;
             correctAnswer++;
-        }else{
+        } else {
             wrongAnswer++;
         }
     }
 
-    public void questionSix(){
+    public void questionSix() {
         CheckBox checkBoxOne = findViewById(R.id.cb_question_6_op1);
         CheckBox checkBoxFour = findViewById(R.id.cb_question_6_op4);
         //option one and four are correct
         CheckBox checkBoxTwo = findViewById(R.id.cb_question_6_op2);
         CheckBox checkBoxThree = findViewById(R.id.cb_question_6_op3);
-        if (!checkBoxTwo.isChecked() && checkBoxFour.isChecked() && checkBoxOne.isChecked() && !checkBoxThree.isChecked()){
+        if (!checkBoxTwo.isChecked() && checkBoxFour.isChecked() && checkBoxOne.isChecked() && !checkBoxThree.isChecked()) {
             totalScore++;
             correctAnswer++;
-        }else {
+        } else {
             wrongAnswer++;
         }
     }
+
     /**
      * function checking question 7
      * question seven ---> radio button handler
      */
 
 
-    public void questionSeven(){
+    public void questionSeven() {
         RadioButton radioButtonOne = findViewById(R.id.rb_question_7_op1);
         RadioButton radioButtonTwo = findViewById(R.id.rb_question_7_op2);
         //option one is correct
-        if (radioButtonOne.isChecked()){
+        if (radioButtonOne.isChecked()) {
             totalScore++;
             correctAnswer++;
-        }else
+        } else
             wrongAnswer++;
     }
+
     /**
      * function checking question 8
      */
@@ -139,9 +143,9 @@ public class MainActivity extends AppCompatActivity {
         if (value.equals("JAMES GOSLING")) {
             totalScore++;
             correctAnswer++;
-        }else if (value.equals("")){
+        } else if (value.equals("")) {
             wrongAnswer++;
-        }else
+        } else
             wrongAnswer++;
     }
 
@@ -158,11 +162,11 @@ public class MainActivity extends AppCompatActivity {
         questionSix();
         questionSeven();
         questionEight();
-        String messageOne = "Yay!! all answers are correct and your score:"+totalScore;
-        String messageTwo = "Your score:"+totalScore+" , correct:"+correctAnswer+" , wrong:"+wrongAnswer;
-        if (totalScore == 8){
+        String messageOne = "Yay!! all answers are correct and your score:" + totalScore;
+        String messageTwo = "Your score:" + totalScore + " , correct:" + correctAnswer + " , wrong:" + wrongAnswer;
+        if (totalScore == 8) {
             Toast.makeText(this, messageOne, Toast.LENGTH_SHORT).show();
-        }else {
+        } else {
             Toast.makeText(this, messageTwo, Toast.LENGTH_SHORT).show();
         }
         //resetting global variables
